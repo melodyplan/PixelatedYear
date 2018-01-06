@@ -37,13 +37,61 @@ article.post:last-of-type {
   border-bottom: none;
 }
 
+.clearfix {
+  clear: both;
+}
+
 /* Header */
 .site-header {
   border-bottom: 2px solid #999;
 }
 
+/* Main Column */
+.main-container {
+  height: 800px;
+  width: 66%;
+  float: left;
+  flex: 1;
+  position: relative;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.month {
+  display: flex;
+  min-height: 40px;
+  flex: 1;
+}
+
+.month-name {
+  margin: 0 auto;
+  background: #f7f7f7;
+  flex-grow: 1;
+  border: 1px solid #999;
+  padding-left: 10px;
+}
+
+/*need to hook days into the months here*/
+
+/* Side Column */
+.secondary-container {
+  width: 30%;
+  float: right;
+}
+
 /* Footer */
 .site-footer {
+  clear: both;
   margin-top: 30px;
   border-top: 2px solid #999;
 }
