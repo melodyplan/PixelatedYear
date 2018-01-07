@@ -73,15 +73,36 @@ article.post:last-of-type {
   flex: 1;
 }
 
+.placeholder {
+  background: white !important;
+}
+
 .month-name {
-  margin: 0 auto;
-  background: #f7f7f7;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  border: 1px solid #999;
-  padding-left: 10px;
+  /*border: 1px solid #999;*/
+  height: 100%;
+  align-content: center;
+
+  font-weight: bold;
+  text-align: center;
 }
 
 /*need to hook days into the months here*/
+
+.day {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999;
+  flex: 0 1 auto;
+  background: #f7f7f7;
+}
+
+.empty {
+  border: none;
+}
 
 /* Side Column */
 .secondary-container {
